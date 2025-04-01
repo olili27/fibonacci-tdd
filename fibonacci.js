@@ -3,9 +3,26 @@
  * @returns {number} The fibonacci of the given number
  */
 export default function fibonacci(number) {
-  if(number === 0) {
+  if (number === 0) {
     return 0;
   }
 
-  return 1;
+  if (number === 1) {
+    return 1;
+  }
+
+  let prev2 = 0;
+  let prev1 = 1;
+
+  // eslint-disable-next-line no-plusplus
+  for (let count = 2, limit = number + 1; count < limit; count++) {
+    const tempPrev2 = prev2;
+
+    prev2 = prev1;
+    prev1 = tempPrev2 + prev1;
+  }
+
+  return prev1;
 }
+
+console.log(fibonacci(2));

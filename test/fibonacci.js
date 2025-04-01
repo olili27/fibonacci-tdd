@@ -15,12 +15,16 @@ describe("Fibonacci Function for Positive Integers", function () {
       assert.strictEqual(fibonacci(0), 0);
     });
 
-     it("fibonacci(1) should return 1", function () {
-       assert.strictEqual(fibonacci(1), 1);
-     });
+    it("fibonacci(1) should return 1", function () {
+      assert.strictEqual(fibonacci(1), 1);
+    });
 
-     it("fibonacci(2) should return 1", function () {
-       assert.strictEqual(fibonacci(2), 1);
-     });
+    it("fibonacci(2) should return 1", function () {
+      assert.strictEqual(fibonacci(2), 1);
+    });
+
+    it("fibonacci(4) should return 3", function () {
+      assert.strictEqual(fibonacci(4), 3);
+    });
   });
 });
