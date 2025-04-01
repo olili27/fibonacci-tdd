@@ -26,5 +26,10 @@ describe("Fibonacci Function for Positive Integers", function () {
     it("fibonacci(4) should return 3", function () {
       assert.strictEqual(fibonacci(4), 3);
     });
+
+     it("fibonacci(13) should return 233", function () {
+       assert.strictEqual(fibonacci(13), 233);
+     });
+    
   });
 });
