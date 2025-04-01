@@ -14,5 +14,9 @@ describe("Fibonacci Function for Positive Integers", function () {
     it("fibonacci(0) should return 0", function () {
       assert.strictEqual(fibonacci(0), 0);
     });
+
+     it("fibonacci(1) should return 1", function () {
+       assert.strictEqual(fibonacci(1), 1);
+     });
   });
 });
