@@ -27,9 +27,30 @@ describe("Fibonacci Function for Positive Integers", function () {
       assert.strictEqual(fibonacci(4), 3);
     });
 
-     it("fibonacci(13) should return 233", function () {
-       assert.strictEqual(fibonacci(13), 233);
-     });
-    
+    it("fibonacci(13) should return 233", function () {
+      assert.strictEqual(fibonacci(13), 233);
+    });
+  });
+
+  describe("Non-Numeric", function () {
+    it("fibonacci('tim') should throw an error `function expects only numbers`", function () {
+      assert.throws(
+        function () {
+          fibonacci("tim");
+        },
+        TypeError,
+        "function expects only numbers",
+      );
+    });
+
+    it("fibonacci('') should throw an error `function expects only numbers`", function () {
+      assert.throws(
+        function () {
+          fibonacci("");
+        },
+        TypeError,
+        "function expects only numbers",
+      );
+    });
   });
 });

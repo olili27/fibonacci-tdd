@@ -3,6 +3,10 @@
  * @returns {number} The fibonacci of the given number
  */
 export default function fibonacci(number) {
+  if (typeof number !== "number") {
+    throw new TypeError("function expects only numbers");
+  }
+
   if (number === 0) {
     return 0;
   }
@@ -25,4 +29,4 @@ export default function fibonacci(number) {
   return prev1;
 }
 
-console.log(fibonacci(2));
+// console.log(fibonacci(2));
