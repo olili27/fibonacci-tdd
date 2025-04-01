@@ -3,5 +3,9 @@
  * @returns {number} The fibonacci of the given number
  */
 export default function fibonacci(number) {
-  return 0;
+  if(number === 0) {
+    return 0;
+  }
+
+  return 1;
 }
