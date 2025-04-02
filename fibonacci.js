@@ -3,16 +3,8 @@
  * @returns {number} The fibonacci of the given number
  */
 export default function fibonacci(number) {
-  if (typeof number !== "number") {
-    throw new TypeError("function expects only numbers");
-  }
-
-  if (number < 0) {
-    throw new RangeError("function expects only positive numbers");
-  }
-
-  if (!Number.isInteger(number)) {
-    throw new TypeError("function expects only positive integers");
+  if (typeof number !== "number" || number < 0 || !Number.isInteger(number)) {
+    throw new Error("function expects only positive integers");
   }
 
   if (number === 0) {

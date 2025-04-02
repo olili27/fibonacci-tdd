@@ -33,45 +33,45 @@ describe("Fibonacci Function for Positive Integers", function () {
   });
 
   describe("Non-Numeric", function () {
-    it("fibonacci('tim') should throw an error `function expects only numbers`", function () {
+    it("fibonacci('tim') should throw an error `function expects only positive integers`", function () {
       assert.throws(
         function () {
           fibonacci("tim");
         },
-        TypeError,
-        "function expects only numbers",
+        Error,
+        "function expects only positive integers",
       );
     });
 
-    it("fibonacci('') should throw an error `function expects only numbers`", function () {
+    it("fibonacci('') should throw an error `function expects only positive integers`", function () {
       assert.throws(
         function () {
           fibonacci("");
         },
-        TypeError,
-        "function expects only numbers",
+        Error,
+        "function expects only positive integers",
       );
     });
   });
 
   describe("Negative Integers", function () {
-    it("fibonacci(-1) should throw an error `function expects only positive numbers`", function () {
+    it("fibonacci(-1) should throw an error `function expects only positive integers`", function () {
       assert.throws(
         function () {
           fibonacci(-1);
         },
-        RangeError,
-        "function expects only positive numbers",
+        Error,
+        "function expects only positive integers",
       );
     });
 
-    it("fibonacci(-21) should throw an error `function expects only positive numbers`", function () {
+    it("fibonacci(-21) should throw an error `function expects only positive integers`", function () {
       assert.throws(
         function () {
           fibonacci(-21);
         },
-        RangeError,
-        "function expects only positive numbers",
+        Error,
+        "function expects only positive integers",
       );
     });
   });
@@ -82,7 +82,7 @@ describe("Fibonacci Function for Positive Integers", function () {
         function () {
           fibonacci(1.1);
         },
-        TypeError,
+        Error,
         "function expects only positive integers",
       );
     });
