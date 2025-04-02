@@ -86,5 +86,9 @@ describe("Fibonacci Function for Positive Integers", function () {
         "function expects only positive integers",
       );
     });
+
+    it("fibonacci(7.0) return 13", function () {
+      assert.strictEqual(fibonacci(7.0), 13);
+    });
   });
 });
