@@ -11,6 +11,10 @@ export default function fibonacci(number) {
     throw new RangeError("function expects only positive numbers");
   }
 
+  if (!Number.isInteger(number)) {
+    throw new TypeError("function expects only positive integers");
+  }
+
   if (number === 0) {
     return 0;
   }
