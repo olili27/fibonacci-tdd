@@ -54,25 +54,25 @@ describe("Fibonacci Function for Positive Integers", function () {
     });
   });
 
-   describe("Negative Integers", function () {
-     it("fibonacci(-1) should throw an error `function expects only positive numbers`", function () {
-       assert.throws(
-         function () {
-           fibonacci(-1);
-         },
-         RangeError,
-         "function expects only positive numbers",
-       );
-     });
+  describe("Negative Integers", function () {
+    it("fibonacci(-1) should throw an error `function expects only positive numbers`", function () {
+      assert.throws(
+        function () {
+          fibonacci(-1);
+        },
+        RangeError,
+        "function expects only positive numbers",
+      );
+    });
 
-        it("fibonacci(-21) should throw an error `function expects only positive numbers`", function () {
-          assert.throws(
-            function () {
-              fibonacci(-21);
-            },
-            RangeError,
-            "function expects only positive numbers"
-          );
-        });
-   });
+    it("fibonacci(-21) should throw an error `function expects only positive numbers`", function () {
+      assert.throws(
+        function () {
+          fibonacci(-21);
+        },
+        RangeError,
+        "function expects only positive numbers",
+      );
+    });
+  });
 });
