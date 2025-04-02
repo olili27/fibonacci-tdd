@@ -76,15 +76,15 @@ describe("Fibonacci Function for Positive Integers", function () {
     });
   });
 
-   describe("Floats", function () {
-     it("fibonacci(1.1) should throw an error `function expects only positive integers`", function () {
-       assert.throws(
-         function () {
-           fibonacci(1.1);
-         },
-         TypeError,
-         "function expects only positive integers",
-       );
-     });
-   });
+  describe("Floats", function () {
+    it("fibonacci(1.1) should throw an error `function expects only positive integers`", function () {
+      assert.throws(
+        function () {
+          fibonacci(1.1);
+        },
+        TypeError,
+        "function expects only positive integers",
+      );
+    });
+  });
 });
