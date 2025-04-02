@@ -7,6 +7,10 @@ export default function fibonacci(number) {
     throw new TypeError("function expects only numbers");
   }
 
+  if (number < 0) {
+    throw new RangeError("function expects only positive numbers");
+  }
+
   if (number === 0) {
     return 0;
   }
